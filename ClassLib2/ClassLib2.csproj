@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLib1\ClassLib1.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- 
+      Uncommenting below line does makes `dotnet run` on a console project fail with "ClassLib1 file not found"
+    -->
+    <GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
+  </PropertyGroup>
+
+  <Target Name="GetDependencyTargetPaths">
+    <ItemGroup>
+      <TargetPathWithTargetPlatformMoniker Include="$(MSBuildThisFileDirectory)$(OutDir)ClassLib1.dll" IncludeRuntimeDependency="false" />
+    </ItemGroup>
+  </Target>  
+
+</Project>

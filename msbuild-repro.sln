@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib1", "ClassLib1\ClassLib1.csproj", "{51B350C4-B414-918D-65C5-7A6A8625D3C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib2", "ClassLib2\ClassLib2.csproj", "{40D69212-4FDD-54AC-1EFD-867F38BE1266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{4C074499-B055-7471-2414-75766D22C168}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B350C4-B414-918D-65C5-7A6A8625D3C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B350C4-B414-918D-65C5-7A6A8625D3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B350C4-B414-918D-65C5-7A6A8625D3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B350C4-B414-918D-65C5-7A6A8625D3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D69212-4FDD-54AC-1EFD-867F38BE1266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D69212-4FDD-54AC-1EFD-867F38BE1266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D69212-4FDD-54AC-1EFD-867F38BE1266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D69212-4FDD-54AC-1EFD-867F38BE1266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C074499-B055-7471-2414-75766D22C168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C074499-B055-7471-2414-75766D22C168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C074499-B055-7471-2414-75766D22C168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C074499-B055-7471-2414-75766D22C168}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E1E7A40-1942-450D-9185-7F8DCE137F15}
+	EndGlobalSection
+EndGlobal
