@@ -15,10 +15,10 @@ Observe the failure
 Another observation
 
 Current project references are as follows
-`Console -> ClassLib1`
-`Console -> ClassLib2`
-`ClassLib2 -> ClassLib1`
+1. `Console -> ClassLib1`
+2. `Console -> ClassLib2`
+3. `ClassLib2 -> ClassLib1`
 
 Console project just prints `typeof(ClassLib1).Name`.
 
-Turns out - removing reference from `Console` to `ClassLib` also fixes the issue. Meaning `ClassLib1` can ONLY be used as a transient reference in this setup, NOT as direct reference.
+Turns out - removing reference from `Console` to `ClassLib1` also fixes the issue. Meaning `ClassLib1` can ONLY be used as a transient reference in this setup, NOT as direct reference.
