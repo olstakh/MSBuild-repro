@@ -3,8 +3,9 @@ Repro of console project failing to run  if reference project has TargetPathWith
 
 # Steps
 
-1. Run `dotnet build --no-incremental`
-2. Run `dotnet run --project .\Console\Console.csproj`
+1. Run `dotnet run --project .\Console\Console.csproj` - OK, `ClassLib1.Class1` printed
+2. Run `dotnet run --project .\Console\Console.csproj /p:DirectReference=true` - FAIL, exception thrown
+3. Run `dotnet run --project .\Console\Console.csproj /p:DisableTransitiveProjectReferences=true` - FAIL, exception thrown
 
 Observe the failure
 
@@ -22,3 +23,4 @@ Current project references are as follows
 Console project just prints `typeof(ClassLib1).Name`.
 
 Turns out - removing reference from `Console` to `ClassLib1` also fixes the issue. Meaning `ClassLib1` can ONLY be used as a transient reference in this setup, NOT as direct reference.
+Also, enabling DisableTransitiveProjectReferences brings the issue back

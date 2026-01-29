@@ -6,9 +6,6 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <!-- 
-      Uncommenting below line does makes `dotnet run` on a console project fail with "ClassLib1 file not found"
-    -->
     <GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
   </PropertyGroup>
 

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLib1\ClassLib1.csproj" />
+    <ProjectReference Include="..\ClassLib1\ClassLib1.csproj" Condition="'$(DirectReference)' == 'true'" />
     <ProjectReference Include="..\ClassLib2\ClassLib2.csproj" />
   </ItemGroup>
 
